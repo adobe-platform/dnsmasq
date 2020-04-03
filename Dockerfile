@@ -10,7 +10,7 @@ RUN make -j all
 
 FROM ubuntu:18.04
 
-RUN apt-get update && apt-get -y install kmod iproute2 lsof dnsutils
+RUN apt-get update && apt-get -y install kmod iproute2 lsof dnsutils udev
 
 COPY setup-network.sh /
 RUN chmod 755 /setup-network.sh
