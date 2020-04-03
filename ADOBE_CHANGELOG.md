@@ -16,6 +16,10 @@ v{D major}.{D minor/fix}-{A major}.{A minor}.{A fix}-adobe
 
 # Log
 
+## v2.80-1.0.1-adobe
+
+- fix async device startup
+
 ## v2.80-1.0.0-adobe
 
 - SO_REUSEPORT
