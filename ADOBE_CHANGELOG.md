@@ -13,8 +13,28 @@ A stands for Adobe's changes
 
 v{D major}.{D minor/fix}-{A major}.{A minor}.{A fix}-adobe
 ```
+# Build
+```commandline
+Use the below comands to build and push multi-arch images using buildx.
+
+1. Create a new builder instance
+
+$ docker buildx create --name <builder_instance_name>
+
+2. Use the created builder instance
+
+$ docker buildx use <builder_instance_name>
+
+3. Build and push multi-arch image
+
+$ docker buildx build --platform linux/amd64,linux/arm64 --tag <docker_repo>/net/dnsmasq:<version> --push .
+```
 
 # Log
+
+## v2.85-1.3.0-adobe
+
+- Enabling multi-arch builds
 
 ## v2.85-1.2.0-adobe
 
